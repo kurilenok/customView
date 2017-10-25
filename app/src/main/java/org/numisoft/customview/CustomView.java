@@ -65,4 +65,17 @@ public class CustomView extends FrameLayout {
         invalidate();
     }
 
+    @Override
+    protected int getSuggestedMinimumWidth() {
+        return (int) radius * 2 + getPaddingLeft() + getPaddingRight();
+    }
+
+    @Override
+    protected int getSuggestedMinimumHeight() {
+        return (int) radius * 2 + getPaddingTop() + getPaddingBottom();
+    }
+
+
+
+
 }
